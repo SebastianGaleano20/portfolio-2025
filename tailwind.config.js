@@ -6,6 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "portfolio-blue": "#2563eb",
+        "portfolio-blue-dark": "#1d4ed8",
+        "portfolio-blue-light": "#93c5fd",
+        "portfolio-green": "#16a34a",
         primary: {
           50: "#eff6ff",
           100: "#dbeafe",

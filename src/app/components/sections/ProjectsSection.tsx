@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Github, ExternalLink } from "lucide-react";
 import Image from "next/image";
+import Button from "../ui/Button";
 
 interface ProjectCardProps {
   title: string;
@@ -19,14 +18,14 @@ export default function ProjectCard({
   codeUrl,
 }: ProjectCardProps) {
   return (
-    <Card className="bg-white border-0 shadow-md hover:shadow-xl smooth-transition transform hover:-translate-y-2 hover:scale-105 overflow-hidden group">
+    <Card className="bg-white border-0 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 overflow-hidden group">
       <div className="aspect-video overflow-hidden">
         <Image
           src={image || "/placeholder.svg"}
           alt={title}
           width={400}
           height={225}
-          className="w-full h-full object-cover smooth-transition group-hover:scale-110"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           loading="lazy"
         />
       </div>
@@ -34,24 +33,24 @@ export default function ProjectCard({
         <h3 className="text-xl font-semibold text-black mb-3">{title}</h3>
         <p className="text-gray-600 mb-6 leading-relaxed">{description}</p>
         <div className="flex gap-3">
-          <Button
-            variant="outline"
-            size="sm"
-            className="flex-1 border-portfolio-green text-portfolio-green hover:bg-portfolio-green hover:text-white smooth-transition bg-transparent focus:ring-2 focus:ring-portfolio-green focus:ring-offset-2"
-            asChild
-          >
-            <a href={projectUrl} target="_blank" rel="noopener noreferrer">
+          <Button asChild variant="outline" size="sm" className="flex-1">
+            <a
+              href={projectUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center"
+            >
               <ExternalLink className="w-4 h-4 mr-2" />
               View Project
             </a>
           </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            className="flex-1 border-gray-300 text-gray-700 hover:bg-gray-100 smooth-transition bg-transparent focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
-            asChild
-          >
-            <a href={codeUrl} target="_blank" rel="noopener noreferrer">
+          <Button asChild variant="secondary" size="sm" className="flex-1">
+            <a
+              href={codeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center"
+            >
               <Github className="w-4 h-4 mr-2" />
               Code
             </a>
