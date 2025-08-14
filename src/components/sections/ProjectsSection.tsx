@@ -27,7 +27,7 @@ export default function ProjectCard({
         <h3 className="text-xl font-semibold text-black mb-3">{title}</h3>
         <p className="text-gray-600 mb-6 leading-relaxed">{description}</p>
         <section className="flex gap-3">
-          <Button asChild variant="outline" size="sm" className="flex-1">
+          <Button asChild variant="primary" size="sm" className="flex-1">
             <a
               href={projectUrl}
               target="_blank"
@@ -38,7 +38,7 @@ export default function ProjectCard({
               View Project
             </a>
           </Button>
-          <Button asChild variant="secondary" size="sm" className="flex-1">
+          <Button asChild variant="primary" size="sm" className="flex-1">
             <a
               href={codeUrl}
               target="_blank"

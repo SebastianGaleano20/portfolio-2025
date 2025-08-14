@@ -39,11 +39,11 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     // Variant classes
     const variantClasses = {
       primary:
-        "bg-portfolio-blue text-white hover:bg-portfolio-blue-dark focus:ring-portfolio-blue-light",
+        "bg-portfolio-blue text-black hover:bg-portfolio-blue-dark focus:ring-portfolio-blue-light",
       secondary:
         "bg-white text-gray-800 border border-gray-300 hover:bg-gray-50 focus:ring-gray-200",
       outline:
-        "bg-transparent text-portfolio-green border border-portfolio-green hover:bg-portfolio-green hover:text-white focus:ring-portfolio-green",
+        "bg-transparent text-black border border-portfolio-green hover:bg-portfolio-green hover:text-white focus:ring-portfolio-green",
       ghost:
         "bg-transparent text-gray-700 hover:bg-gray-100 focus:ring-gray-200",
       success:
