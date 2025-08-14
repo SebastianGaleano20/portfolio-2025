@@ -1,6 +1,7 @@
 import Hero from "@/components/sections/HeroSection";
 import ProjectCard from "@/components/sections/ProjectsSection";
 import Footer from "@/components/ui/Footer";
+import AboutPage from "@/components/sections/AboutSection";
 
 export default function HomePage() {
   const featuredProjects = [
@@ -62,6 +63,7 @@ export default function HomePage() {
           </section>
         </section>
       </section>
+      <AboutPage />
       <Footer />
     </section>
   );

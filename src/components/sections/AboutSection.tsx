@@ -1,4 +1,4 @@
-// pages/about.tsx
+"use client";
 import ProfileImage from "../ui/ProfileImage";
 import SkillsGrid from "../sections/SkillGrid";
 import Head from "next/head";
@@ -54,7 +54,7 @@ export default function AboutPage() {
                 <p className="mb-6">
                   My approach combines clean code principles with user-centered
                   design. I enjoy the entire development process, from concept
-                  to deployment, and I'm always eager to learn new technologies
+                  to deployment, and I m always eager to learn new technologies
                   and methodologies.
                 </p>
               </section>
